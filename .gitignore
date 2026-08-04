@@ -1,0 +1,19 @@
+# Raw build output — huge, machine-specific. Keep locally as debugging evidence;
+# summarize the interesting parts in journal/ instead.
+logs/*
+!logs/.gitkeep
+!logs/README.md
+
+# Compiled experiment output
+experiments/**/*.o
+experiments/**/*.ko
+experiments/**/*.mod*
+experiments/**/a.out
+experiments/**/hello
+experiments/**/*.cmd
+experiments/**/Module.symvers
+experiments/**/modules.order
+
+# Source tarballs — pinned by version in journal/, not committed
+sources/
+*.tar.*
